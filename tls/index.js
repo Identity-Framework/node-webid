@@ -36,7 +36,8 @@ function verify (certificate, callback) {
 
     // Verify Key
     verifyKey(certificate, uri, body, headers, function (err, success) {
-      return callback(err, uri)
+      //return callback(err, uri)
+      return callback(err, success)
     })
   })
 }
